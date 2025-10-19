@@ -1,0 +1,11 @@
+CREATE TABLE users (
+  username VARCHAR(30) PRIMARY KEY,
+  password TEXT NOT NULL
+);
+
+CREATE TABLE addresses (
+  id SERIAL PRIMARY KEY,
+  address TEXT NOT NULL,
+  username VARCHAR(30)
+    REFERENCES users ON DELETE CASCADE
+);
