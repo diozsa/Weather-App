@@ -53,6 +53,7 @@ Create this file in the root of the project and set those values.
 > mariadb -u root -p
 - create db user
 > CREATE USER 'weather_user'@'localhost' IDENTIFIED BY 'your_password';
+
 > GRANT ALL PRIVILEGES ON weather.* TO 'weather_user'@'localhost';
 - create db
 > CREATE DATABASE weather;
